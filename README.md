@@ -6,12 +6,12 @@ To make our adaptive display long, we have utilise all the digital and analog pi
 We have simulate this project on tinkercad and same thing we can do for the hardware https://www.tinkercad.com/things/eV4vtMEEEoD-swanky-waasa-jaagub/editel?sharecode=JIZNn5NyBxW8k8uTS8zIu8bKEg0yVnDOuavqIaRETMk
 
 ## MAKING_PROTOTYPE_OF_8X8 LED MATRIX
- First I have designed 8X8 LED MATRIX Display, which can display each letter of any word one by one https://www.tinkercad.com/things/8zGnrHuBV5a-byte-code/editel?sharecode=qXNX-9aTNwFb6FhO_bi6EhygnVYsJZjj8NBAWW9M86g.....In this display board we have shown a word "WELCOME TO IITR", in which each letter is dispalyed one by one and in between one letter to another we have put some randomeffects also.
+First I have designed 8X8 LED MATRIX Display, which can display each letter of any word one by one https://www.tinkercad.com/things/8zGnrHuBV5a-byte-code/editel?sharecode=qXNX-9aTNwFb6FhO_bi6EhygnVYsJZjj8NBAWW9M86g.....In this display board we have shown a word "WELCOME TO IITR", in which each letter is dispalyed one by one and in between one letter to another we have put some randomeffects also.
  
  ## Materials Required For Hardware implementation
- 1. LEDs: - As we need to make an 8X8 matrix, so we required 64 pieces of 5 mm LEDs in total.![image](https://user-images.githubusercontent.com/105349056/167856977-8813d8fe-1d9e-45b2-bba1-8a1ad0c0a33f.png)
+ 1. LEDs: - As we need to make an 8X8 matrix, so we required 64 pieces of 5 mm LEDs in total. ![image](https://user-images.githubusercontent.com/105349056/167857188-a4ef778c-aa30-400e-908f-bd0986ff1b55.png)
 
-2. Zero PCB Board: - For assembling the LEDs, Resistors, female headers, and Arduino UNO.![image](https://user-images.githubusercontent.com/105349056/167857188-a4ef778c-aa30-400e-908f-bd0986ff1b55.png)
+2. Zero PCB Board: - For assembling the LEDs, Resistors, female headers, and Arduino UNO.![image](https://user-images.githubusercontent.com/105349056/167856977-8813d8fe-1d9e-45b2-bba1-8a1ad0c0a33f.png)
 
 3. 100-ohm Resistors : - That we will connect to the 8 common anodes of each column.![image](https://user-images.githubusercontent.com/105349056/167857525-f9e71edb-5c00-4438-a0d5-450ce53df7e9.png)
 
@@ -63,7 +63,8 @@ digitalWrite(rowPins[row], LOW); // disconnect LEDs<br/>
 }
 
 ## 5X15 LED Matrix Display
-  For this we have to connect 5 analog pins to the common cathodes of LEDs and (1 Analog + 14 Digital) Pins to the common Anodes of LEDs
+For this we have to connect 5 analog pins to the common cathodes of LEDs and (1 Analog + 14 Digital) Pins to the common Anodes of LEDs ![5X15](https://user-images.githubusercontent.com/105349056/167902421-9af77e83-9df2-45d7-8d63-82961240032a.jpeg)<br/>
+Using the same concept as we have used in 8X8 LED matrix, we have displayed a word "WEL COME TO IITR". For that we have made 4 different arrays of each word in the similar manner that we have used in representing each alphabets. Here is the link to our tinkercad simulation of 5X15. https://www.tinkercad.com/things/eV4vtMEEEoD-swanky-waasa-jaagub/editel?sharecode=JIZNn5NyBxW8k8uTS8zIu8bKEg0yVnDOuavqIaRETMk
 
 ## Conclusion
 -> We have shown any word letter by letter on 8X8 LED Matrix. We have used the concept of a 7-segmented display i.e., how we can represent any number/word by turning on the particular LED.<br/>
