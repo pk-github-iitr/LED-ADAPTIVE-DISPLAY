@@ -25,13 +25,13 @@ We have simulate this project on tinkercad and same thing we can do for the hard
  In the arduino code we have made arrays of all alphabets (A to z)
      Example for printing (T)
      byte A[] = {  
-     B00000000,
-     B00010000,
-     B00101000,
-     B01000100,
-     B01000100,
-     B01111100,
-     B01000100,
+     B00000000,<br/>
+     B00010000,<br/>
+     B00101000,<br/>
+     B01000100,<br/>
+     B01000100,<br/>
+     B01111100,<br/>
+     B01000100,<br/>
      B01000100};
 
 Converting each column into decimal 
@@ -39,27 +39,27 @@ Converting each column into decimal
 ## Showing each letter using the concept of Persistence of Vision
 Millis() function is used for multitasking i.e., using this we can hold our previous ongoing task and can execute the next:-
 
-void show( byte * image, unsigned long duration)
-{
-unsigned long start = millis(); 
-while (start + duration > millis()) 
-{
-for(int row = 0; row < 8; row++)
-{
-digitalWrite(rowPins[row], HIGH); // connect row to +5 volts
-for(int column = 0; column < 8; column++)
-{
-boolean pixel = bitRead(image[row],column);
-if(pixel == 1)
-{
-digitalWrite(columnPins[column], LOW); // connect column to Gnd
-}
-delayMicroseconds(300); // **a small delay for each LED to move them fast such that it resembles a letter to human eye**
-digitalWrite(columnPins[column], HIGH); // disconnect column from Gnd
-}
-digitalWrite(rowPins[row], LOW); // disconnect LEDs
-}
-}
+void show( byte * image, unsigned long duration)<br/>
+{<br/>
+unsigned long start = millis(); <br/>
+while (start + duration > millis()) <br/>
+{<br/>
+for(int row = 0; row < 8; row++)<br/>
+{<br/>
+digitalWrite(rowPins[row], HIGH); // connect row to +5 volts<br/>
+for(int column = 0; column < 8; column++)<br/>
+{<br/>
+boolean pixel = bitRead(image[row],column);<br/>
+if(pixel == 1)<br/>
+{<br/>
+digitalWrite(columnPins[column], LOW); // connect column to Gnd<br/>
+}<br/>
+delayMicroseconds(300); // **a small delay for each LED to move them fast such that it resembles a letter to human eye**<br/>
+digitalWrite(columnPins[column], HIGH); // disconnect column from Gnd<br/>
+}<br/>
+digitalWrite(rowPins[row], LOW); // disconnect LEDs<br/>
+}<br/>
+}<br/>
 }
 
 ## 5X15 LED Matrix Display
