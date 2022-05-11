@@ -71,9 +71,9 @@ digitalWrite(rowPins[row], LOW); // disconnect LEDs
 -> We have implemented this project on Tinkercad using Arduino Uno and also in Arduino code we have made use of the millis() function for executing multiple tasks at a time.
 
 ### Reference
-=> https://create.arduino.cc/projecthub/shahbaz75sb/8x8-led-matrix-interfacing-with-arduino-daec65
-=> https://www.arduino.cc/en/Tutorial/Foundations/ShiftOut
-=> https://www.instructables.com/48-X-8-Scrolling-LED-Matrix-Using-Arduino/
+=> https://create.arduino.cc/projecthub/shahbaz75sb/8x8-led-matrix-interfacing-with-arduino-daec65<br/>
+=> https://www.arduino.cc/en/Tutorial/Foundations/ShiftOut<br/>
+=> https://www.instructables.com/48-X-8-Scrolling-LED-Matrix-Using-Arduino/<br/>
 => https://www.youtube.com/watch?v=Ol6x5mjeu4w
 
 ### CONRTIBUTORS
