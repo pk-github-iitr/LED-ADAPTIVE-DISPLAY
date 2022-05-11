@@ -22,8 +22,8 @@ We have simulate this project on tinkercad and same thing we can do for the hard
 7. Arduino Uno with cable: - The main brain of the circuit, operated when a code is uploaded using Arduino IDE software. ![image](https://user-images.githubusercontent.com/105349056/167857912-81f6cf28-8c8b-4a91-917d-96800a551cd9.png)
 
  ## Logic that we have used to represent any letter
- In the arduino code we have made arrays of all alphabets (A to z)
-     Example for printing (T)<br/>
+ In the arduino code we have made arrays of all alphabets (A to z)<br/>
+     Example for printing (A)<br/>
      byte A[] = {  <br/>
      B00000000,<br/>
      B00010000,<br/>
