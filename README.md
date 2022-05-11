@@ -1,12 +1,12 @@
 # LED-ADAPTIVE-DISPLAY
 Adaptive’s Full Color LED Displays to provide real-time information to people inside a single building or large building complex; communicating what to do in response to a threat.
-Adaptive Communication displays relay critical alerts and messages automatically via highly visible, emergency full color LED signage as soon as an emergency or event is triggered - ensuring that all students, faculty or employees are aware of the crisis and know how to proceed to safety.  Our signage interfaces with most integrated systems.
-We have used the concept of 7 segmented display i.e., we can reprsent any number in between 0-9 just by blinking some particular LEDs out of 7. In similar Passion, we can display any word on 8X8 LED matrix which is common cathode and common anode type ![8X8 LED Matrix](https://user-images.githubusercontent.com/105349056/167851126-9b31919c-983d-4fb6-90fc-5ba788e38616.jpeg)
-To make our adaptive display long, we have utilise all the digital and analog pins of Arduino UNO, and we have design 5X15 LED matrix, which can show few characters of word altogether.
-We have simulate this project on tinkercad and same thing we can do for the hardware https://www.tinkercad.com/things/eV4vtMEEEoD-swanky-waasa-jaagub/editel?sharecode=JIZNn5NyBxW8k8uTS8zIu8bKEg0yVnDOuavqIaRETMk
+Adaptive Communication displays relay critical alerts and messages automatically via highly visible, emergency full color LED signage as soon as an emergency or event is triggered - ensuring that all students, faculty or employees are aware of the crisis and know how to proceed to safety. Our signage interfaces with most integrated systems.
+To implement this project, we have used the concept of a 7 segmented display i.e., we can represent any number between 0-9 just by blinking some particular LEDs out of 7. In a similar way, we can display any word on 8X8 LED matrix which is common cathode and common anode type ![8X8 LED Matrix](https://user-images.githubusercontent.com/105349056/167851126-9b31919c-983d-4fb6-90fc-5ba788e38616.jpeg)
+To make our adaptive display long, we have utilized all the digital and analog pins of Arduino UNO, and we have designed a 5X15 LED matrix, which can show letters of some small words altogether.
+We have simulated this project on tinkercad and the same thing we can do in the hardware https://www.tinkercad.com/things/eV4vtMEEEoD-swanky-waasa-jaagub/editel?sharecode=JIZNn5NyBxW8k8uTS8zIu8bKEg0yVnDOuavqIaRETMk
 
 ## MAKING_PROTOTYPE_OF_8X8 LED MATRIX
-First I have designed 8X8 LED MATRIX Display, which can display each letter of any word one by one https://www.tinkercad.com/things/8zGnrHuBV5a-byte-code/editel?sharecode=qXNX-9aTNwFb6FhO_bi6EhygnVYsJZjj8NBAWW9M86g.....In this display board we have shown a word "WELCOME TO IITR", in which each letter is dispalyed one by one and in between one letter to another we have put some randomeffects also.
+First we have designed 8X8 LED MATRIX Display, which can display each letter of any word one by one https://www.tinkercad.com/things/8zGnrHuBV5a-byte-code/editel?sharecode=qXNX-9aTNwFb6FhO_bi6EhygnVYsJZjj8NBAWW9M86g.....In this display board, we have shown the word "WELCOME TO IITR", in which each letter is displayed one by one, and in between one letter to another, we have put some randomeffects also.
  
  ## Materials Required For Hardware implementation
  1. LEDs: - As we need to make an 8X8 matrix, so we required 64 pieces of 5 mm LEDs in total. ![image](https://user-images.githubusercontent.com/105349056/167857188-a4ef778c-aa30-400e-908f-bd0986ff1b55.png)
@@ -63,13 +63,15 @@ digitalWrite(rowPins[row], LOW); // disconnect LEDs<br/>
 }
 
 ## 5X15 LED Matrix Display
-For this we have to connect 5 analog pins to the common cathodes of LEDs and (1 Analog + 14 Digital) Pins to the common Anodes of LEDs ![LED Matrix(5X15)](https://user-images.githubusercontent.com/105349056/167904557-883d2b64-36bc-45a4-8d4a-895b797af8fb.jpeg)
-Using the same concept as we have used in 8X8 LED matrix, we have displayed a word "WEL COME TO IITR". For that we have made 4 different arrays of each word in the similar manner that we have used in representing each alphabets. Here is the link to our tinkercad simulation of 5X15. https://www.tinkercad.com/things/eV4vtMEEEoD-swanky-waasa-jaagub/editel?sharecode=JIZNn5NyBxW8k8uTS8zIu8bKEg0yVnDOuavqIaRETMk
+For this, we have to connect 5 analog pins to the common cathodes of LEDs and (1 Analog + 14 Digital) Pins to the common Anodes of LEDs and in between Arduino pins and anodes, we have connected 100-ohm resistors to limit the current. ![LED Matrix(5X15)](https://user-images.githubusercontent.com/105349056/167904557-883d2b64-36bc-45a4-8d4a-895b797af8fb.jpeg)
+Using the same concept as we have used in the 8X8 LED matrix, we have displayed the word "WEL COME TO IITR". For that, we have made 4 different arrays of each word in a similar manner that we have used in representing each alphabet. Here is the link to our tinkercad simulation of 5X15. https://www.tinkercad.com/things/eV4vtMEEEoD-swanky-waasa-jaagub/editel?sharecode=JIZNn5NyBxW8k8uTS8zIu8bKEg0yVnDOuavqIaRETMk
 
 ## Conclusion
 -> We have shown any word letter by letter on 8X8 LED Matrix. We have used the concept of a 7-segmented display i.e., how we can represent any number/word by turning on the particular LED.<br/>
 -> For showing letters of any word, we have made arrays of each alphabet of the length of 8 representing every 8 columns, and each index represents the corresponding decimal value of an 8-bit binary number.<br/>
--> We have implemented this project on Tinkercad using Arduino Uno and also in Arduino code we have made use of the millis() function for executing multiple tasks at a time.
+-> We have implemented this project on Tinkercad using Arduino Uno and also in Arduino code we have made use of the millis() function for executing multiple tasks at a time. <br/>
+-> The concept of Persistence Of Vision to show any letter to the human eye i.e., the human eye can retain anything up to (1/30)th second, and with this, if we fastly blink respective LEDs of any letter then the human eye can visualize that particular letter.
+
 
 ### Reference
 => https://create.arduino.cc/projecthub/shahbaz75sb/8x8-led-matrix-interfacing-with-arduino-daec65<br/>
