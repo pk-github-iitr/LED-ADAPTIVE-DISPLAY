@@ -23,8 +23,8 @@ We have simulate this project on tinkercad and same thing we can do for the hard
 
  ## Logic that we have used to represent any letter
  In the arduino code we have made arrays of all alphabets (A to z)
-     Example for printing (T)
-     byte A[] = {  
+     Example for printing (T)<br/>
+     byte A[] = {  <br/>
      B00000000,<br/>
      B00010000,<br/>
      B00101000,<br/>
@@ -66,8 +66,8 @@ digitalWrite(rowPins[row], LOW); // disconnect LEDs<br/>
   For this we have to connect 5 analog pins to the common cathodes of LEDs and (1 Analog + 14 Digital) Pins to the common Anodes of LEDs
 
 ## Conclusion
--> We have shown any word letter by letter on 8X8 LED Matrix. We have used the concept of a 7-segmented display i.e., how we can represent any number/word by turning on the particular LED.
--> For showing letters of any word, we have made arrays of each alphabet of the length of 8 representing every 8 columns, and each index represents the corresponding decimal value of an 8-bit binary number.
+-> We have shown any word letter by letter on 8X8 LED Matrix. We have used the concept of a 7-segmented display i.e., how we can represent any number/word by turning on the particular LED.<br/>
+-> For showing letters of any word, we have made arrays of each alphabet of the length of 8 representing every 8 columns, and each index represents the corresponding decimal value of an 8-bit binary number.<br/>
 -> We have implemented this project on Tinkercad using Arduino Uno and also in Arduino code we have made use of the millis() function for executing multiple tasks at a time.
 
 ### Reference
