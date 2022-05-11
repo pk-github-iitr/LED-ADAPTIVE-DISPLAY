@@ -63,7 +63,7 @@ digitalWrite(rowPins[row], LOW); // disconnect LEDs<br/>
 }
 
 ## 5X15 LED Matrix Display
-For this we have to connect 5 analog pins to the common cathodes of LEDs and (1 Analog + 14 Digital) Pins to the common Anodes of LEDs ![5X15](https://user-images.githubusercontent.com/105349056/167902421-9af77e83-9df2-45d7-8d63-82961240032a.jpeg)<br/>
+For this we have to connect 5 analog pins to the common cathodes of LEDs and (1 Analog + 14 Digital) Pins to the common Anodes of LEDs ![LED Matrix(5X15)](https://user-images.githubusercontent.com/105349056/167904557-883d2b64-36bc-45a4-8d4a-895b797af8fb.jpeg)
 Using the same concept as we have used in 8X8 LED matrix, we have displayed a word "WEL COME TO IITR". For that we have made 4 different arrays of each word in the similar manner that we have used in representing each alphabets. Here is the link to our tinkercad simulation of 5X15. https://www.tinkercad.com/things/eV4vtMEEEoD-swanky-waasa-jaagub/editel?sharecode=JIZNn5NyBxW8k8uTS8zIu8bKEg0yVnDOuavqIaRETMk
 
 ## Conclusion
