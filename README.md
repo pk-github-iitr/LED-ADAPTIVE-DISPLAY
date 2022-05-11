@@ -61,14 +61,26 @@ digitalWrite(rowPins[row], LOW); // disconnect LEDs
 }
 }
 }
+
+## 5X15 LED Matrix Display
+  For this we have to connect 5 analog pins to the common cathodes of LEDs and (1 Analog + 14 Digital) Pins to the common Anodes of LEDs
+
 ## Conclusion
 -> We have shown any word letter by letter on 8X8 LED Matrix. We have used the concept of a 7-segmented display i.e., how we can represent any number/word by turning on the particular LED.
 -> For showing letters of any word, we have made arrays of each alphabet of the length of 8 representing every 8 columns, and each index represents the corresponding decimal value of an 8-bit binary number.
 -> We have implemented this project on Tinkercad using Arduino Uno and also in Arduino code we have made use of the millis() function for executing multiple tasks at a time.
 
+### Reference
+=> https://create.arduino.cc/projecthub/shahbaz75sb/8x8-led-matrix-interfacing-with-arduino-daec65
+=> https://www.arduino.cc/en/Tutorial/Foundations/ShiftOut
+=> https://www.instructables.com/48-X-8-Scrolling-LED-Matrix-Using-Arduino/
+=> https://www.youtube.com/watch?v=Ol6x5mjeu4w
+
 ### CONRTIBUTORS
  <a href="https://github.com/pk-github-iitr">Peeyush Kumar</a><br/>
-
+ <a href="https://github.com/Pratys-23">Pratyaksh Chanda</a><br/>
+ <a href="https://github.com/vardan-jain">Vardan Jain</a><br/>
+ 
 
  
 
