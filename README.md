@@ -83,7 +83,7 @@ Using the same concept as we have used in the 8X8 LED matrix, we have displayed 
  <a href="https://github.com/pk-github-iitr">Peeyush Kumar</a><br/>
  <a href="https://github.com/Pratys-23">Pratyaksh Chanda</a><br/>
  <a href="https://github.com/vardan-jain">Vardan Jain</a><br/>
- <a href="https://github.com/kishankkeshri">Kishan Keshari</a>
+ <a href="https://github.com/kishankkeshri">Kishan Keshari</a></br>
  <a href="https://github.com/ekans47">Ekansh Nayak</a>
  
  
